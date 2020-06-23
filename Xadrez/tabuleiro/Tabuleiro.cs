@@ -56,7 +56,7 @@ namespace tabuleiro
 
         public bool posicaoValida(Posicao posi)
         {
-            if (posi.coluna < 0 || posi.coluna > colunas || posi.linha < 0 || posi.linha > linhas)
+            if (posi.coluna < 0 || posi.coluna >= colunas || posi.linha < 0 || posi.linha >= linhas)
             {
                 return false;
             }
