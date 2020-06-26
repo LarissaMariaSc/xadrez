@@ -20,6 +20,10 @@ namespace tabuleiro
             qteMovimentos = 0;
         }
 
+        public void decrementarQtdMovimentos()
+        {
+            qteMovimentos--;
+        }
         public void incrementarQtdMovimentos()
         {
             qteMovimentos++;
