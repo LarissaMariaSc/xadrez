@@ -226,41 +226,34 @@ namespace xadrez
         public void colocarPecas()
         {
             // Pecas brancas
-            //for (char i = 'B'; i <= 'H'; i++)
-            //{
-            //    tab.colocarPeca(new Peao(Cor.Branca, tab), new PosicaoXadrez(i, 2).toPosicao());
-            //}
+            for (char i = 'a'; i <= 'h'; i++)
+            {
+                colocarNovaPeca(i, 2, new Peao(Cor.Branca, tab));
+            }
 
-            colocarNovaPeca('c', 1, new Torre(Cor.Branca, tab));
-            colocarNovaPeca('c', 2, new Torre(Cor.Branca, tab));
-            colocarNovaPeca('d', 2, new Torre(Cor.Branca, tab));
-            colocarNovaPeca('e', 1, new Torre(Cor.Branca, tab));
-            colocarNovaPeca('e', 2, new Torre(Cor.Branca, tab));
-
-            //tab.colocarPeca(new Cavalo(Cor.Branca, tab), new PosicaoXadrez('B', 1).toPosicao());
-            //tab.colocarPeca(new Cavalo(Cor.Branca, tab), new PosicaoXadrez('G', 1).toPosicao());
-            //tab.colocarPeca(new Bispo(Cor.Branca, tab), new PosicaoXadrez('C', 1).toPosicao());
-            //tab.colocarPeca(new Bispo(Cor.Branca, tab), new PosicaoXadrez('F', 1).toPosicao());
-            colocarNovaPeca('d', 1, new Rei(Cor.Branca, tab));
-            // tab.colocarPeca(new Rainha(Cor.Branca, tab), new PosicaoXadrez('E', 1).toPosicao());
+            colocarNovaPeca('a', 1, new Torre(Cor.Branca, tab));
+            colocarNovaPeca('h', 1, new Torre(Cor.Branca, tab));
+            colocarNovaPeca('b', 1, new Cavalo(Cor.Branca, tab));
+            colocarNovaPeca('g', 1, new Cavalo(Cor.Branca, tab));
+            colocarNovaPeca('c', 1, new Bispo(Cor.Branca, tab));
+            colocarNovaPeca('f', 1, new Bispo(Cor.Branca, tab));
+            colocarNovaPeca('d', 1, new Rainha(Cor.Branca, tab));
+            colocarNovaPeca('e', 1, new Rei(Cor.Branca, tab));
 
             // Pecas pretas
-            //for (char i = 'A'; i <= 'H'; i++)
-            // {
-            //   tab.colocarPeca(new Peao(Cor.Preta, tab), new PosicaoXadrez(i, 7).toPosicao());
-            //}
-            colocarNovaPeca('c', 8, new Torre(Cor.Preta, tab));
-            colocarNovaPeca('c', 7, new Torre(Cor.Preta, tab));
-            colocarNovaPeca('d', 7, new Torre(Cor.Preta, tab));
-            colocarNovaPeca('e', 7, new Torre(Cor.Preta, tab));
-            colocarNovaPeca('e', 8, new Torre(Cor.Preta, tab));
-            //tab.colocarPeca(new Cavalo(Cor.Preta, tab), new PosicaoXadrez('B', 8).toPosicao());
-            // tab.colocarPeca(new Cavalo(Cor.Preta, tab), new PosicaoXadrez('G', 8).toPosicao());
-            // tab.colocarPeca(new Bispo(Cor.Preta, tab), new PosicaoXadrez('C', 8).toPosicao());
-            // tab.colocarPeca(new Bispo(Cor.Preta, tab), new PosicaoXadrez('F', 8).toPosicao());
-            colocarNovaPeca('d', 8, new Rei(Cor.Preta, tab));
-            // tab.colocarPeca(new Rainha(Cor.Preta, tab), new PosicaoXadrez('E', 8).toPosicao());
+            for (char i = 'a'; i <= 'h'; i++)
+            {
+                colocarNovaPeca(i, 7, new Peao(Cor.Preta, tab));
+            }
 
+            colocarNovaPeca('a', 8, new Torre(Cor.Preta, tab));
+            colocarNovaPeca('h', 8, new Torre(Cor.Preta, tab));
+            colocarNovaPeca('b', 8, new Cavalo(Cor.Preta, tab));
+            colocarNovaPeca('g', 8, new Cavalo(Cor.Preta, tab));
+            colocarNovaPeca('c', 8, new Bispo(Cor.Preta, tab));
+            colocarNovaPeca('f', 8, new Bispo(Cor.Preta, tab));
+            colocarNovaPeca('d', 8, new Rainha(Cor.Preta, tab));
+            colocarNovaPeca('e', 8, new Rei(Cor.Preta, tab));
         }
     }
 }
